@@ -17,3 +17,4 @@ typedef struct arena{
 
 int arenaInit(ARENA* arena, size_t size);
 void* arenaAlloc(ARENA* arena, size_t size);
+int arenaDealloc(ARENA* arena, void* startAddress, size_t length);

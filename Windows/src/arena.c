@@ -45,3 +45,12 @@ void* arenaAlloc(ARENA* arena, size_t size)
 		return NULL;
 	}
 }
+
+int arenaDealloc(ARENA* arena, void* startAddress, size_t length)
+{
+	if(startAddress == NULL)
+	{
+		return -1;
+	}
+	
+}
